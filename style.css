@@ -1,0 +1,255 @@
+/* Imports the Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Variables for this website */
+:root {
+    --primary: #000043;
+    --secondary: #f5b13c;
+    --primary-tint: #171755;
+    --primary-shade: #04041f; 
+
+    --light: hwb(260 96% 0%);
+    --dark: #03031a;
+
+    --muted: #e9e8f0;
+    --muted-tint: #eae9f1;
+    --muted-shade: #b0b0c2;
+    
+    --font-normal: "Atkinson Hyperlegible Mono", sans-serif;
+    --font-heading: "Anonymous Pro", monospace;;
+
+    --space-0: 0; /* 0px */
+    --space-1: 0.5rem; /* 4px */
+    --space-2: 1rem; /* 16px */
+    --space-3: 2rem; /* 32px */
+    --space-4: 3rem; /* 0px */
+    --space-5: 4rem; /* 4px */
+    --space-6: 5rem; /* 16px */
+    --space-7: 6rem; /* 32px */
+    --shadow-dark: 0 0.1rem 0.2rem 0.1rem rgba(54, 48, 41, 0.2);
+    --shadow-light: 0 0.1rem 0.2rem 0.1rem rgba(255, 255, 255, 0.5); 
+}
+
+/* CSS Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*will force elements to scale from the border instead*/
+}
+
+body, ul, li {
+    font-family: var(--font-heading);
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h2, h6 {
+    font-family: var(--font-normal);
+    margin-bottom: 0.5rem;
+}
+
+main {
+    align-content: center;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+/************************* BUTTONS PERIADDDDDDDDDDDD********************/
+
+.btn {
+    border: none;
+    border-radius: var(--space-2);
+    padding: var(--space-1) var(--space-2);
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--light);
+}
+.btn-primary:hover {
+    background-color: var(--primary-tint);
+}
+.btn-primary:active {
+    background-color: var(--primary-shade);
+}
+
+.btn-secondary {
+    background-color: var(--muted);
+    color: var(--dark);
+}
+
+.btn-secondary:hover {
+    background-color: var(--muted-tint);
+}
+
+.btn-secondary:active {
+    background-color: var(--muted-shade);
+}
+
+.link {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.link:hover {
+    color: var(--primary-tint);
+}
+
+.link:active {
+    color: var(--primary-shade);
+}
+
+.news-image:hover {
+    color: var(--primary-tint);
+}
+
+/************************* COLORS PERIADDDDDDDDDDDD********************/
+
+.bg-primary { background-color: var(--primary);}
+.bg-secondary { background-color: var(--secondary);}
+.bg-light { background-color: var(--light);}
+.bg-dark { background-color: var(--dark);}
+.bg-muted { background-color: var(--muted);}
+
+.text-primary {color: var(--primary); }
+.text-light {color: var(--light);}
+.text-dark {color: var(--dark);}
+.text-muted {color: var(--muted);}
+
+.shadow-dark {box-shadow: var(--shadow-dark)}
+.shadow-light {box-shadow: var(--shadow-light)}
+
+/************************* COMPONENTS PERIADDDDDDDDDDDD********************/
+
+.news-image {
+    position: relative;
+    /*This will tell the news-tag to behave.*/
+}
+
+.news-image img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border: 4px solid var(--light);
+    border-radius: var(--space-1);
+    box-shadow: var(--shadow-dark);
+}
+
+.news-image .news-tag {
+    background-color: var(--dark);
+    color: var(--light);
+    box-shadow: var(--shadow-light);
+
+    padding: var(--space-1);
+    border-radius: var(--space-3);
+    position: absolute;
+    top: var(--space-2);
+    left: var(--space-2);
+}
+
+#main-banner img {
+    width: 25%;
+}
+
+/************************* LAYOUTT PERIADDDDDDDDDDDD********************/
+.d-flex { display: flex;}
+.flex-between { justify-content: space-between;}
+.grid-2col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Repeat 1fr Twice */
+}
+.grid-3col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Repeat 1fr Twice */
+}
+
+.center {
+    margin: var(--space-3) auto var(--space-3) auto;
+}
+
+/************************* SPACINGGGGG PERIADDDDDDDDDDDD********************/
+
+.m-0 { margin: var(--space-0);}
+.m-1 { margin: var(--space-1);}
+.m-2 { margin: var(--space-2);}
+.m-3 { margin: var(--space-3);}
+.m-4 { margin: var(--space-4);}
+.m-5 { margin: var(--space-5);}
+.m-6 { margin: var(--space-6);}
+.m-7 { margin: var(--space-7);}
+
+.p-0 { padding: var(--space-0);}
+.p-1 { padding: var(--space-1);}
+.p-2 { padding: var(--space-2);}
+.p-3 { padding: var(--space-3);}
+.p-4 { padding: var(--space-4);}
+.p-5 { padding: var(--space-5);}
+.p-6 { padding: var(--space-6);}
+.p-7 { padding: var(--space-7);}
+
+.gap-0 { gap: var(--space-0);}
+.gap-1 { gap: var(--space-1);}
+.gap-2 { gap: var(--space-2);}
+.gap-3 { gap: var(--space-3);}
+
+/************************* SWATCHESS PERIADDDDDDDDDDDD********************/
+
+.swatches {
+    display: flex; /* organises children elements in a line */
+}
+
+.swatch {
+    padding: var(--space-1);
+    border: var(--dark) 2px solid;
+}
+
+.swatch .swatch-value {
+    aspect-ratio: 1 / 1;
+    width: 4rem; /* em - root font size (16px) */
+    border-radius: 100%;
+    box-shadow: var(--shadow-dark);
+    margin: auto;
+}
+
+.swatch .swatch-name {
+    text-align: center;
+}
+
+
+/************************* NAV PERIADDDDDDDDDDDD********************/
+
+nav ul {
+    font-size: 2.2rem;
+    text-align: center;
+    padding: var(--space-2);
+}
+
+/************************* TABLE PERIADDDDDDDDDDDD********************/
+
+table {
+    border-collapse: collapse;
+    margin: 7% auto 5% auto;
+
+}
+
+table th {
+    font-size: 1em;
+    text-align: left;
+}
+
+table tr, td {
+    border: 5px solid var(--primary);
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/************************* MAIN PERIADDDDDDDDDDDD********************/
+
+div img {
+    margin: 0 var(--space-5) 0 var(--space-5);
+}
