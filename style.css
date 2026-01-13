@@ -63,7 +63,11 @@ h2,
 h3,
 h4,
 h2,
-h6 {
+h6, 
+label
+input,
+textarea,
+select  {
     font-family: var(--font-normal);
     margin-bottom: 0.5rem;
     color: var(--primary)
@@ -75,7 +79,7 @@ main {
 
 .container {
     max-width: 1500px;
-    margin: 15% auto auto auto;
+    margin: 10% auto auto auto;
 }
 
 /************************* BUTTONS PERIADDDDDDDDDDDD********************/
@@ -354,10 +358,6 @@ nav ul {
     position: fixed;
     top: 0;
     width: 100%;
-}
-
-div img {
-    margin: 0 var(--space-5) 0 var(--space-5);
 }
 
 /************************* TABLE PERIADDDDDDDDDDDD********************/
