@@ -59,7 +59,7 @@ body, ul, li {
 
 h1, p,h2, h3, h4, h2, h6, label, input, textarea, select  {
     font-family: var(--font-normal);
-    margin-bottom: 0.5rem;
+
     color: var(--primary)
 }
 
@@ -76,8 +76,13 @@ main {
     margin: auto;
             border-color: var(--dark);
 }
+
 .content-container {
     margin-top: 5rem;
+}
+
+.contact-container {
+    margin-top: 10rem;
 }
 
 /************************* BUTTONS PERIADDDDDDDDDDDD********************/
@@ -407,6 +412,10 @@ label, a, figcaption {
     display: flex;
     justify-content: center;
     
+}
+
+.left {
+    text-align:left;
 }
 
 .block {
