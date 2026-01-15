@@ -8,15 +8,16 @@
     --primary-tint: #171755;
     --primary-shade: #04041f;
     --secondary-tint: #ffc45f;
-    --secondary-shade: #df9a24;
+    --secondary-shade: #ba7a0c;
 
     --light: hwb(260 96% 0%);
     --white: #ffffff;
+    --white-shade: #b5b5b5;
     --dark: #03031a;
 
     --muted: #e9e8f0;
     --muted-tint: #eae9f1;
-    --muted-shade: #b0b0c2;
+    --muted-shade: #938fa8;
 
     --font-normal: "Atkinson Hyperlegible Mono", sans-serif;
     --font-heading: "Anonymous Pro", monospace;
@@ -55,6 +56,7 @@
 body, ul, li {
     font-family: var(--font-heading);
     line-height: 1.5;
+            list-style-type: none;   
 }
 
 h1, p,h2, h3, h4, h2, h6, label, input, textarea, select  {
@@ -156,6 +158,23 @@ main {
     background-color: var(--muted);
 }
 
+.primary-shadow {
+  box-shadow: inset 0 0 var(--space-3) var(--primary-shade);
+}
+
+.secondary-shadow {
+    box-shadow: inset 0 0 var(--space-3) var(--secondary-shade);
+}
+
+.muted-shadow {
+    box-shadow: inset 0 0 var(--space-8) var(--muted-shade);
+}
+
+.white-shadow {
+    box-shadow: inset 0 0 var(--space-1) var(--white-shade);
+}
+
+
 .text-primary {
     color: var(--primary);
 }
@@ -189,14 +208,7 @@ main {
     object-fit: cover;
     /*This will tell the news-tag to behave.*/
 }
-.banner-image:hover {
-    position: relative;    
-    width: 100%;
-    aspect-ratio: 4/1;
-    object-fit: cover;
-    background-color: var(--muted-tint);
-    /*This will tell the news-tag to behave.*/
-}
+
 
 .banner-image .banner-tag {
     background-color: var(--dark);
@@ -211,6 +223,8 @@ main {
 
 .nav-image {
     height: 100%;
+    appearance: none;
+    background: none;
 }
 
 .news-image {
@@ -223,17 +237,6 @@ main {
     width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
-}
-
-.news-image .news-tag {
-    background-color: var(--dark);
-    color: var(--light);
-    box-shadow: var(--shadow-light);
-    padding: var(--space-1);
-    border-radius: var(--space-3);
-    position: absolute;
-    top: var(--space-2);
-    left: var(--space-2);
 }
 
 .overflow {

@@ -8,15 +8,15 @@
     <title>MCAST – The Malta College of Arts, Science & Technology</title>
 </head>
 
-<body class="bg-muted">
-    <div class="bg-primary fixed">
+<body class="bg-muted muted-shadow">
+    <div class="bg-primary fixed primary-shadow">
         <div id="main-banner" class="d-flex container">
-            <a href="index.html" class="link">
-            <img class="nav-image" src="assets/images.jpg">
+            <a href="index.html" class="link ">
+                <img class="nav-image primary-shadow" src="assets/images.jpg">
             </a>
 
             <nav id="main-navigation">
-                <div class="grid-2col text-light bg-primary">
+                <div class="grid-2col text-light">
                     <ul class="link">Study</ul>
                     <ul><a class="link" href="calender.html">Calendar</a></ul>
                 </div>
@@ -296,12 +296,14 @@
                     </div>
                     <div class="m-2">
                         <label for="input-message">Your message:</label>
-                        <textarea name="message" id="input-message" placeholder="your message here..." cols="70"
+                        <textarea name="message" id="input-message" placeholder="Your message here..." cols="70"
                             rows="10" required minlength="20"></textarea>
                     </div>
+                    <div class="contact-container">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="reset" class="btn btn-secondary">Reset</button>
+                    </div>
 
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                    <button type="reset" class="btn btn-secondary">Reset</button>
                 </form>
             </div>
         </section>
